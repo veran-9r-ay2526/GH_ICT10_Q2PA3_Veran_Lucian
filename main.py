@@ -17,7 +17,7 @@ def game_details(e):
     game_check = favorite_game in game_devs
 
     # Message to be displayed
-    display_message = ('Sorry, your game is not in the list!', f'{game_devs.get([favorite_game])}')
+    display_message = ('Sorry, your game is not in the list!', f'{game_devs.get(favorite_game)}')
 
     display(display_message[game_check], target="resulta")
 
